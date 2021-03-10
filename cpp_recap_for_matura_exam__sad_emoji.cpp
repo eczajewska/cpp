@@ -4,8 +4,8 @@
     #include <cstdlib>
 
     srand(time(NULL)); //pobiera czas unixowy z komputera
-    liczba=rand()%a+b; //reszta dzielenia czasu unixowego przez a, gdy¿ jest to iloœæ liczb, ile mamy do dyspozycji
-                   //+b, gdy¿ nasz przedzia³ liczbowy zaczyna siê od b
+    liczba=rand()%a+b; //reszta dzielenia czasu unixowego przez a, gdyÅ¼ jest to iloÅ›Ä‡ liczb, ile mamy do dyspozycji
+                   //+b, gdyÅ¼ nasz przedziaÅ‚ liczbowy zaczyna siÄ™ od b
 
                    //w praktyce:
 
@@ -16,13 +16,13 @@
           liczba=rand()%50+5; //liczba pseudolosowa z zakresu od 5 do 55
 
 
-///SPÓJNIKI I INNE
+///SPÃ“JNIKI I INNE
 
-    //      !== - jest ró¿ne od
+    //      !== - jest rÃ³Å¼ne od
     //      && - i
     //      || - lub
 
-/// RÓ¯NE
+/// RÃ“Å»NE
 
     #include <cstdlib>
     system("cls")           //czyszczenie ekranu
@@ -30,9 +30,9 @@
     #include <windows.h>
     Sleep(1000)             //czeka sekunde
 
-    system("pause");        //program sam siê nie wy³¹cza
+    system("pause");        //program sam siÄ™ nie wyÅ‚Ä…cza
 
     #include <stdio.h>
-    getchar();              //program sam siê nie wy³¹cza
+    getchar();              //program sam siÄ™ nie wyÅ‚Ä…cza
 
-    cout<< "\a";            //fajowy beep z g³oœnika
+    cout<< "\a";            //fajowy beep z gÅ‚oÅ›nika

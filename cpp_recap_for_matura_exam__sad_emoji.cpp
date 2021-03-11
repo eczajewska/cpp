@@ -15,6 +15,27 @@
           srand(time(NULL));
           liczba=rand()%50+5; //liczba pseudolosowa z zakresu od 5 do 55
 
+///ZAPIS PLIKU
+    
+    #include <iostream>
+    #include <fstream> //!!!!!!!!!!!!!!!!!!!!!!!!!!!PAMIĘTAĆ BO INACZEJ NIE ZADZIAŁA
+    using namespace std;
+
+    int main()
+    {
+
+        string imie, nazwisko;
+        int nr;
+
+        cin>>imie>>nazwisko>>nr;
+
+        fstream plik;
+        plik.open("dane.txt", ios::out);            //plik.open("dane.txt", ios::out | ios::app); oznaczałoby dopisanie tekstu do tego pliku
+        plik<<imie<<endl<<nazwisko<<endl<<nr;
+        plik.close();
+
+        return 0;
+    }
 
 ///SPÓJNIKI I INNE
 
@@ -34,6 +55,11 @@
 
     #include <stdio.h>
     getchar();              //program sam się nie wyłącza
+
+    int a;
+    if(!(cin>>a))                   //jesli wpisywany teraz znak nie jest integerem, to wyskakuje błąd
+        {cerr<<"To nie liczba!";
+        exit(0);}           
 
     cout<< "\a";            //fajowy beep z głośnika
 

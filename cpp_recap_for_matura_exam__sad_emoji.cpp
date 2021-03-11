@@ -36,3 +36,11 @@
     getchar();              //program sam się nie wyłącza
 
     cout<< "\a";            //fajowy beep z głośnika
+
+    #include <iomanip>
+    cout<<setprecision(1000); //pokazuje liczbe do 1000 znakow
+
+    exit(o);                //zamyka program
+
+    while(true)
+    for( ; ; )              //nieskończone pętle
